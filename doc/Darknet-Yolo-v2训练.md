@@ -1,7 +1,9 @@
 # Darknet-Yolo v2 训练自己的数据
 
 **Author:** Zeyu Chen
+
 **Email:** iszeyu.chen@gmail.com
+
 **Date:** 2017.2.25
 
 
@@ -102,13 +104,16 @@ https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects
 ### 3.2 修改代码
 #### 3.2.1 .names文件
 在 darknet/data 文件下新建 helipad.names.
+
 这个文件中的行数要和类数一致，每一行都是一个类别的名字.
+
 我的只有一类,所以:
 
     helipad
 
 #### 3.2.2 .data文件
 复制 cfg/voc.data,重命名为 helipad.data
+
 修改
 
     classes = 1
@@ -119,6 +124,7 @@ https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects
 
 #### 3.2.3 .cfg文件
 复制 cfg/yolo_voc.cfg,重命名为 helipad.cfg
+
 修改
 
     [region]中
@@ -131,6 +137,7 @@ https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects
 > (classes + coords + 1) * num
 
 在yolo_voc.vfg中:
+
 coords = 4, num = 5
 
 附: [关于filters参数的讨论 - Google Group](https://groups.google.com/forum/#!topic/darknet/B4rSpOo84yg)
