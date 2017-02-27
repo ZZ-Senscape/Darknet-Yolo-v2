@@ -1,4 +1,4 @@
-p# Darknet-Yolo v2 训练自己的数据
+# Darknet-Yolo v2 训练自己的数据
 
 **Author:** Zeyu Chen
 **Email:** iszeyu.chen@gmail.com
@@ -9,8 +9,6 @@ http://guanghan.info/blog/en/my-works/train-yolo
 - Yolo v2
 http://lib.csdn.net/article/deeplearning/57863?knId=1726
 https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects
-
-
 
 ## 1. 搜集样本集
 ### 1.1 基本要求:
